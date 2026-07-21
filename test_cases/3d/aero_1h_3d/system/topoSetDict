@@ -1,0 +1,372 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | SeedFOAM Hybrid 3D case generator
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    {
+        name    buildingCells; type cellSet; action new;
+        source  boxToCell; box (6.3769 5.7058 0)(6.7562 6.2456 1.6972);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (5.5181 1.2307 0)(5.9984 1.5895 4.1701);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.4553 5.9566 0)(11.0018 6.2988 1.9395);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.4677 3.6617 0)(10.8802 4.1353 1.7419);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.2703 2.7209 0)(12.0067 3.0542 1.7606);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (8.6539 5.1108 0)(8.9795 5.5509 2.9018);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.2933 5.4507 0)(4.0384 5.7958 3.4554);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (8.1544 6.4664 0)(8.8126 7.0642 4.1648);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (2.9439 6.1156 0)(3.3459 6.4309 4.0853);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.7589 4.6301 0)(12.4744 4.9779 1.7382);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.2554 3.6326 0)(6.6309 3.9808 2.9237);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.124 5.8029 0)(9.5535 6.1052 3.7509);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.5916 3.0686 0)(12.2469 3.5184 3.9929);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.5593 0.9769 0)(10.1128 1.4013 3.9823);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.9541 3.5241 0)(13.5172 4.0946 2.8562);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.1555 4.3668 0)(3.8757 4.8707 3.0735);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.3232 2.8171 0)(3.8654 3.2167 2.1644);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.023 2.3808 0)(10.7616 2.7667 2.8401);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.0213 4.671 0)(4.7916 5.057 2.1262);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (5.8049 2.2549 0)(6.3471 2.635 2.1316);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.4927 1.1867 0)(12.8187 1.6594 3.1197);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.2553 2.878 0)(12.6679 3.284 3.4624);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.8492 1.8171 0)(13.3873 2.2026 2.609);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.9999 5.6035 0)(10.3142 5.9522 3.2245);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.3315 1.7729 0)(7.8674 2.2036 2.4653);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.5086 1.9278 0)(4.2485 2.3022 2.6559);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.2054 4.0932 0)(11.5179 4.4668 3.2578);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.7783 2.8382 0)(7.1649 3.1633 1.9965);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (8.7618 3.4316 0)(9.2639 3.847 2.9833);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.886 2.5959 0)(8.5203 3.0689 2.9629);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.9448 3.9772 0)(4.289 4.3488 3.869);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.5217 0.8535 0)(11.141 1.4486 3.9485);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.1101 3.0212 0)(6.6425 3.6032 3.914);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.4521 5.1664 0)(12.8415 5.4885 2.5071);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.0686 5.3866 0)(7.4758 5.9427 2.5151);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (2.8685 1.0084 0)(3.3241 1.4147 2.3211);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.367 2.3925 0)(4.7033 2.8358 2.3923);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.3998 5.9958 0)(5.0395 6.5934 2.9119);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (2.4655 5.0747 0)(2.8613 5.382 2.3185);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (5.6132 5.3212 0)(6.3212 5.9128 3.9909);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.1887 3.3118 0)(3.7272 3.7414 2.1412);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (8.3321 5.551 0)(8.6855 6.0834 2.9999);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.5735 3.9285 0)(8.3235 4.4283 1.7913);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.9698 3.299 0)(8.5191 3.7036 3.0454);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.5069 4.638 0)(11.0945 4.962 2.5706);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.4212 6.6021 0)(6.8873 7.0229 3.537);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.899 6.539 0)(13.4938 6.8902 2.5244);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.5845 3.3419 0)(7.9319 3.9095 3.1816);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (8.7885 2.4945 0)(9.4859 2.9349 2.77);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.1045 4.6154 0)(9.8706 5.0737 4.1461);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.8805 3.9413 0)(12.5032 4.4927 3.2998);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.4206 6.6165 0)(8.0803 7.1351 2.3067);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.1123 6.1394 0)(11.6538 6.7164 3.7245);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.9245 3.2334 0)(11.4765 3.7175 3.0412);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.9886 6.06 0)(10.3502 6.5286 2.6688);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.0968 2.4495 0)(12.4941 2.7908 4.1628);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.0804 6.0334 0)(7.7359 6.5664 3.8322);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.7744 2.267 0)(7.474 2.7343 1.9555);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (5.7601 6.3219 0)(6.2449 6.7237 3.5631);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.1774 6.4322 0)(3.5383 6.9688 2.2309);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.7168 1.1303 0)(8.51 1.6782 2.1772);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.8904 6.2319 0)(4.2646 6.5809 2.3494);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.2465 4.3519 0)(6.6119 4.7218 2.2357);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (7.2936 4.8684 0)(8.0873 5.2656 4.1374);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.9167 3.5392 0)(7.5067 4.0394 2.6467);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.5122 6.8276 0)(11.0727 7.2855 2.8441);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.6143 3.8367 0)(5.0369 4.4142 2.2232);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.6304 5.1763 0)(5.0811 5.4811 3.9252);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.3609 1.7013 0)(6.7489 2.2984 2.8122);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.2237 1.9762 0)(9.9066 2.4908 2.5348);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.2115 4.1798 0)(9.9859 4.4951 2.2634);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.2579 6.1792 0)(12.8507 6.6252 3.0902);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.4542 0.9029 0)(4.7841 1.2778 1.8972);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.3033 6.5549 0)(9.6916 7.0957 4.0568);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.5613 5.1132 0)(12.0843 5.5183 3.0747);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (10.4152 5.3484 0)(10.9393 5.9454 2.029);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (9.6851 3.3299 0)(10.1575 3.9162 2.083);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (5.6836 2.6458 0)(6.3601 2.9948 1.8054);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (13.2046 5.0374 0)(13.6423 5.352 1.8524);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (12.8705 2.7047 0)(13.4656 3.0819 3.0446);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.2573 2.253 0)(11.9542 2.6593 1.9875);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (3.547 1.4012 0)(4.3024 1.7652 4.0541);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (4.1593 3.0256 0)(4.6903 3.5953 3.3227);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (2.836 2.6896 0)(3.2892 3.2391 3.3742);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (6.9281 1.1612 0)(7.3799 1.7376 3.4951);
+    }
+    {
+        name    buildingCells; type cellSet; action add;
+        source  boxToCell; box (11.168 1.4115 0)(11.75 1.9016 3.3145);
+    }
+    {
+        name    fluid; type cellSet; action new;
+        source  cellToCell; set buildingCells;
+    }
+    {
+        name    fluid; type cellSet; action invert;
+    }
+);
+
+// ************************************************************************* //

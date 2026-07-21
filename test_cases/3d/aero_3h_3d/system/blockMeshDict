@@ -1,0 +1,49 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | SeedFOAM Hybrid 3D case generator
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale 1;
+
+vertices
+(
+    (0 0 0)
+    (21.6 0 0)
+    (21.6 10.8 0)
+    (0 10.8 0)
+    (0 0 8.65)
+    (21.6 0 8.65)
+    (21.6 10.8 8.65)
+    (0 10.8 8.65)
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (432 216 173) simpleGrading (1 1 1)
+);
+
+edges ();
+
+boundary
+(
+    inlet   { type patch; faces ((0 4 7 3)); }
+    outlet  { type patch; faces ((1 2 6 5)); }
+    ground  { type wall;  faces ((0 3 2 1)); }
+    top     { type patch; faces ((4 5 6 7)); }
+    sides   { type symmetry; faces ((0 1 5 4) (3 7 6 2)); }
+);
+
+mergePatchPairs ();
+
+// ************************************************************************* //

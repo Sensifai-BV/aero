@@ -1,0 +1,25 @@
+{
+  "model": "aero_3h_2d",
+  "tier": "3h",
+  "dim": "2d",
+  "grid": [
+    432,
+    216,
+    8
+  ],
+  "cells": 746496,
+  "domain": [
+    21.6,
+    10.8,
+    0.4
+  ],
+  "n_buildings": 194,
+  "Uref": 1.1159816777646583,
+  "alpha": 0.27322082813297155,
+  "nu": 0.0015691505056153751,
+  "endTime": 441,
+  "est_runtime_s": 216.1,
+  "est_runtime_h": 0.06,
+  "est_iters": 294,
+  "note": "2D extruded slab (nz=8), same x-y grid; cheaper companion"
+}

@@ -1,0 +1,29 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | SeedFOAM Hybrid 3D case generator
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      epsilon;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -3 0 0 0 0];
+internalField   uniform 0.000542358;
+boundaryField
+{
+    inlet     { type fixedValue; value uniform 0.000542358; }
+    outlet    { type inletOutlet; inletValue uniform 0.000542358; value uniform 0.000542358; }
+    ground    { type epsilonWallFunction; value uniform 0.000542358; }
+    buildings { type epsilonWallFunction; value uniform 0.000542358; }
+    top       { type slip; }
+    sides     { type symmetry; }
+}
+
+// ************************************************************************* //

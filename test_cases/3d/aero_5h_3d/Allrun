@@ -1,0 +1,24 @@
+#!/bin/bash
+# Aero 5h 3d model -- full OpenFOAM-14 urban RANS pipeline.
+# Mesh (blockMesh -> topoSet -> subsetMesh -> name buildings wall) then solve
+# (foamRun incompressibleFluid, steady kEpsilon SIMPLE). Run from this dir:
+#   source /opt/openfoam14/etc/bashrc && ./Allrun
+# WARNING: this tier is calibrated to ~4.95 h of foamRun wall-clock
+# (23,843,304 cells). Ensure adequate RAM/time before launching.
+set -e
+cd "$(dirname "$0")"
+
+blockMesh                           > log.blockMesh  2>&1
+topoSet                             > log.topoSet    2>&1
+subsetMesh -cellSet fluid -noFields > log.subsetMesh 2>&1
+sed -i 's/oldInternalFaces/buildings/' constant/polyMesh/boundary
+foamDictionary constant/polyMesh/boundary -entry entry0/buildings/type -set wall > /dev/null 2>&1
+checkMesh                           > log.checkMesh  2>&1
+
+echo "mesh done: $(date)"
+foamRun                             > log.foamRun    2>&1
+RC=$?
+echo "foamRun_exit=$RC"
+echo "n_outer_iters=$(grep -c 'Solving for p,' log.foamRun)"
+echo "final_time=$(foamListTimes 2>/dev/null | tail -1)"
+exit $RC

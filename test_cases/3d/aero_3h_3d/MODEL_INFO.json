@@ -1,0 +1,25 @@
+{
+  "model": "aero_3h_3d",
+  "tier": "3h",
+  "dim": "3d",
+  "grid": [
+    432,
+    216,
+    173
+  ],
+  "cells": 16142976,
+  "domain": [
+    21.6,
+    10.8,
+    8.65
+  ],
+  "n_buildings": 154,
+  "Uref": 0.9881195477798838,
+  "alpha": 0.26638566034113603,
+  "nu": 0.0017012822340025354,
+  "endTime": 996,
+  "est_runtime_s": 10833.2,
+  "est_runtime_h": 3.009,
+  "est_iters": 664,
+  "note": "3D runtime-calibrated tier"
+}
